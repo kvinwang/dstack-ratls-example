@@ -1,6 +1,6 @@
 [workspace]
 members = ["client", "server"]
-resolver = "3"
+resolver = "2"
 
 [workspace.dependencies]
 anyhow = "1.0.98"
