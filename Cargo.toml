@@ -1,0 +1,15 @@
+[workspace]
+members = ["client", "server"]
+resolver = "3"
+
+[workspace.dependencies]
+anyhow = "1.0.98"
+reqwest = { version = "0.12.15", features = ["rustls-tls"], default-features = false }
+clap = "4.5.36"
+tokio = "1.44.2"
+x509-parser = "0.17.0"
+
+ra-tls = { git = "https://github.com/Dstack-TEE/dstack", version = "0.4.1" }
+http-client = { git = "https://github.com/Dstack-TEE/dstack", version = "0.4.1" }
+dstack-types = { git = "https://github.com/Dstack-TEE/dstack", version = "0.4.1" }
+dstack-guest-agent-rpc = { git = "https://github.com/Dstack-TEE/dstack", version = "0.4.1" }

@@ -1,0 +1,16 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow.workspace = true
+reqwest = { workspace = true, features = ["rustls-tls"] }
+x509-parser.workspace = true
+clap = { workspace = true, features = ["derive"] }
+tokio = { workspace = true, features = ["full"] }
+
+ra-tls.workspace = true
+http-client.workspace = true
+dstack-types.workspace = true
+dstack-guest-agent-rpc.workspace = true

@@ -1,0 +1,12 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rocket = { git = "https://github.com/rwf2/Rocket", branch = "master", features = ["mtls"] }
+anyhow.workspace = true
+dstack-guest-agent-rpc.workspace = true
+dstack-types.workspace = true
+http-client.workspace = true
+ra-tls.workspace = true
